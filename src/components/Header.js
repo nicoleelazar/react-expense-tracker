@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Header = () => {
     return (
         <div>
-            hello from header
+            <h2 className="heading">Expense Tracker</h2>
         </div>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;
