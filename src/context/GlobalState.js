@@ -1,5 +1,5 @@
 import React, { createContext, useReducer } from "react";
-import AppReducer from './AppReducer'
+import AppReducer from "./AppReducer";
 
 //Inital State
 const initialState = {
@@ -22,5 +22,7 @@ export const GlobalProvider = ({ children }) => {
         <GlobalContext.Provider value={{ transactions: state.transactions }}>
             {children}
         </GlobalContext.Provider>
-    )
+    );
 };
+
+//consumer not needed when using hooks, it is replaced by useContext hook

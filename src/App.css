@@ -10,6 +10,8 @@
     --c-feature: rgb(110, 87, 151);
     --c-feature-hover: rgb(138, 108, 190);
     --c-shadow: rgba(163, 163, 163, 0.5);
+    --c-negative: rgb(255, 78, 78);
+    --c-positive: rgb(51, 202, 109);
 }
 
 body {
@@ -81,11 +83,19 @@ body {
 }
 
 .minus {
-    border-right: 6px solid rgb(255, 78, 78);
+    border-right: 6px solid var(--c-negative);
 }
 
 .plus {
-    border-right: 6px solid rgb(78, 255, 146);
+    border-right: 6px solid var(--c-positive);
+}
+
+.positive {
+    color: var(--c-positive);
+}
+
+.negative {
+    color: var(--c-negative);
 }
 
 .delete-btn {
